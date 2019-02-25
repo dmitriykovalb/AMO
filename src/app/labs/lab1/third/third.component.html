@@ -1,0 +1,30 @@
+<div class="box">
+  <form class="example-form">
+    <h2>Третє завдання</h2>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="n" #n type="number" required />
+    </mat-form-field>
+    <br />
+    <!-- <mat-form-field class="example-full-width">
+      <input matInput placeholder="a" #a type="number" required />
+    </mat-form-field>
+    <br /> -->
+    <!-- <mat-form-field class="example-full-width">
+      <input matInput placeholder="a1" #a1 type="number" required />
+    </mat-form-field>
+    <br /> -->
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="b" #b type="number" required />
+    </mat-form-field>
+    <br />
+    <!-- <mat-form-field class="example-full-width">
+      <input matInput placeholder="k" #k type="number" required />
+    </mat-form-field> -->
+  </form>
+</div>
+<button mat-button (click)="sumTo(5, 5); b.value = ''; n.value = ''">
+  Порахувати
+</button>
+<div class="box">
+  {{ res }}
+</div>

@@ -1,0 +1,21 @@
+<div class="box">
+  <form class="example-form">
+    <h2>Перше завдання</h2>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="a" #k type="number" required />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="b" #x type="number" required />
+    </mat-form-field>
+    <button
+      mat-button
+      (click)="sqrt(+k.value, +x.value); k.value = ''; x.value = ''"
+    >
+      Порахувати
+    </button>
+
+    <div class="box">
+      {{ arr }}
+    </div>
+  </form>
+</div>

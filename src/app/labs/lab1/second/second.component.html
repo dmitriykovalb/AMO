@@ -1,0 +1,22 @@
+<div class="box">
+  <form class="example-form">
+    <h2>Друге завдання</h2>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="k" #i type="number" required />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="x" #j type="number" required />
+    </mat-form-field>
+    <button
+      mat-button
+      (click)="second(+i.value, +j.value); i.value = ''; j.value = ''"
+    >
+      Порахувати
+    </button>
+
+    <div class="box">
+      {{ y }}
+    </div>
+  </form>
+</div>

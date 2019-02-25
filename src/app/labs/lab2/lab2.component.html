@@ -1,0 +1,13 @@
+<div class="box">
+  <form class="example-form">
+    <h2>Завдання</h2>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Введіть масив" type="number" #arr required />
+    </mat-form-field>
+  </form>
+</div>
+<button mat-button (click)="selectionSort([1, 4, 6, 2, 1, 32, 1])">
+  Порахувати
+</button>
+
+<div class="box">{{ +arr }}</div>
